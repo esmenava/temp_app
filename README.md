@@ -1,26 +1,20 @@
-Local Temperature Companion App
+Local Temperature Node.js IoT App
 ============================
-The Local Temperature Companion App is a simple app that visualizes data received from the Local Temperature node.js/IoT project when running on a IoT platform such as a development board with a Temperature sensor connected. This sensor is included in the Grove Starter Kit Plus - Intel® IoT Edition. For more information, go to https://software.intel.com/en-us/iot/devkit.
+The Local Temperature Node.js sample application distributed within Intel® XDK IoT Edition under the IoT with Node.js Projects project creation option showcases how to read analog data from a Grover Starter Kit Plus – IoT Intel® Edition Temperature Sensor, start a web server and communicate wirelessly using WebSockets.
 
-Intel(R) XDK 
+Intel(R) XDK IoT Edition
 -------------------------------------------
-This sample is part of the Intel(R) XDK IoT Edition. 
+This template is part of the Intel(R) XDK IoT Edition. 
 Download the Intel(R) XDK IoT Edition at https://software.intel.com/en-us/html5/xdk-iot. To see the technical details of the sample, 
-please visit the sample article page at http://software.intel.com/en-us/html5/articles/iot-local-temperature-nodejs-&-companion.
+please visit the sample article page at https://software.intel.com/en-us/html5/articles/iot-local-temperature-nodejs-and-html5-samples.
 
 
 Important App Files
 ---------------------------
-* index.html
+* main.js
+* package.json
 * icon.png
-* screenshot.png
-* app.json
 * README.md
-* js/*
-* app_framework/*
-* css/*
-* jquery/*
-* d3/*
 
 License Information Follows
 ---------------------------
@@ -51,21 +45,23 @@ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT 
 OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+mraa
+--------------------------------------------
+* Included on the IoTDevkit Linux Image 
 
-App Framework
------------------------------------------------------------------------------
-http://app-framework-software.intel.com/
-source: https://github.com/01org/appframework
-license: https://raw.githubusercontent.com/01org/appframework/master/license.txt
+* source:  https://github.com/intel-iot-devkit/mraa
+* license:  https://github.com/intel-iot-devkit/mraa/blob/9d488c8e869e59e1dff2c68218a8f38e9b959cd7/cmake/modules/LICENSE_1_0.txt
 
-jQuery
------------------------------------------------------------------------------
-http://jquery.com/
-source: https://github.com/jquery/jquery
-license: https://raw.githubusercontent.com/jquery/jquery/master/LICENSE.txt
+express
+--------------------------------------------
+http://expressjs.com/
 
-d3
------------------------------------------------------------------------------
-http://d3js.org/
-source: https://github.com/mbostock/d3
-license: https://github.com/mbostock/d3/blob/master/LICENSE
+* source: https://github.com/strongloop/express
+* license: https://github.com/strongloop/express/blob/master/LICENSE
+
+socket.io
+--------------------------------------------
+http://socket.io/
+
+* source: https://github.com/Automattic/socket.io
+* license: https://github.com/Automattic/socket.io/blob/master/LICENSE
